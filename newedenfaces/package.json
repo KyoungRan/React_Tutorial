@@ -17,8 +17,8 @@
     "type": "git",
     "url": "https://github.com/KyoungRan/React_Tutorial/tree/master/newedenfaces"
   },
-  "author": "Kyoungran Kang (kyoungrankang@gmail.com)",
-  "license": "ISC",
+  "author": "Kyoungran Kang (kyoungrankang@gmail.com) but original source from http://sahatyalkabov.com/create-a-character-voting-app-using-react-nodejs-mongodb-and-socketio/",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/KyoungRan/React-Tutorial/issues"
   },
