@@ -1,14 +1,14 @@
 import alt from '../alt';
 import AddCharacterActions from '../actions/AddCharacterActions';
 
-class AddCharacterStore{
+class AddCharacterStore {
   constructor() {
     this.bindActions(AddCharacterActions);
     this.name = '';
     this.gender = '';
     this.helpBlock = '';
     this.nameValidationState = '';
-    this.genderValidationsState = '';
+    this.genderValidationState = '';
   }
 
   onAddCharacterSuccess(successMessage) {

@@ -5,7 +5,6 @@ import HomeActions from '../actions/HomeActions';
 import {first, without, findWhere} from 'underscore';
 
 class Home extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = HomeStore.getState();
