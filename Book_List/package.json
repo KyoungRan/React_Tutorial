@@ -1,13 +1,16 @@
 {
-  "name": "book_list",
+  "name": "redux-simple-starter",
   "version": "1.0.0",
   "description": "Simple starter package for Redux with React and Babel support",
   "main": "index.js",
-  "repository": "git@github.com:KyoungRan/React_Tutorial.git",
   "scripts": {
+<<<<<<< HEAD
     "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+=======
+     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+>>>>>>> 687ee5b1b1fe8e21d29d33c2e7d5e51c477887fb
   },
-  "author": "Kyoungran Kang(kyoungrankang@gmail.com)",
+  "author": "",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.2.1",
