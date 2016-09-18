@@ -4,11 +4,7 @@
   "description": "Simple starter package for Redux with React and Babel support",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-    "start": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
-=======
      "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
->>>>>>> 687ee5b1b1fe8e21d29d33c2e7d5e51c477887fb
   },
   "author": "",
   "license": "ISC",
