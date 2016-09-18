@@ -3,12 +3,17 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
 class UserList extends Component {
+  createListItems() {
+    return this.props.users.map((user) => {
+      return (
+        <li key={user.id}>{user.first} {user.last}</li>
+      )
+    });
+  }
   render() {
     return (
       <ul>
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
+        {this.createListItems()}
       </ul>
     );
   }
