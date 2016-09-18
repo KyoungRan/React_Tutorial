@@ -7,7 +7,7 @@ export default function() {
       last: "Roberts",
       age: 71,
       description: "Bucky is a React developer and YouTuber",
-      thumbnail: "http://i.imgur.com/7yUvePi.jpg"
+      thumbnail: "http://i.imgur.com/7yUvePI.jpg"
     },
     {
       id: 2,
