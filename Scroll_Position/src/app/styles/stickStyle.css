@@ -1,0 +1,11 @@
+/* sticky
+======================================*/
+.fixed-sidebar {
+	position: fixed;
+  top: 70px;
+    right: 15px;
+    padding: 0 21px 0 30px;
+}
+.section-three {
+  position: relative;
+}

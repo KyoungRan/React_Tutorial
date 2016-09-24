@@ -5,6 +5,7 @@ class Business extends React.Component {
     return (
       <div className='container'>
         <h1>Business Page</h1>
+        {String(this.props.auth)}
       </div>
     );
   }

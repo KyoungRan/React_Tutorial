@@ -15,7 +15,6 @@ class Home extends React.Component {
     return (
       <div>
         <SectionOne />
-        <SectionTwo />
         <SectionThree />
         <SectionFour />
         <a href="#spytop" class="top"><span class="glyphicon glyphicon-chevron-up"></span></a>

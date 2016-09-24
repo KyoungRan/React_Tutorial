@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, cloneElement } from 'react';
+import {connect} from 'react-redux';
 import Navbar from '../components/Layout/Navbar';
 import Footer from '../components/Layout/Footer';
 
@@ -12,11 +13,11 @@ class Layout extends Component {
     return (
       <div>
         <Navbar history={this.props.history} />
-          {this.props.children}
+          {cloneElement(this.props.children, this.props)}
         <Footer />
       </div>
     );
   }
 }
 
-export default Layout;
+export default connect(({auth}) => ({auth}))(Layout);

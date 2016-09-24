@@ -1,7 +1,7 @@
 import React from "react";
 import { IndexLink, Link } from "react-router";
 
-class Navbar extends React.Component {
+class Navbar1 extends React.Component {
   constructor() {
     super()
     this.state = {
@@ -78,7 +78,7 @@ class Navbar extends React.Component {
           </ul>
 
         </div>
-      </nav>  
+      </nav>
 
       </div>
     );
@@ -86,4 +86,4 @@ class Navbar extends React.Component {
 }
 
 
-export default Navbar;
+export default Navbar1;
