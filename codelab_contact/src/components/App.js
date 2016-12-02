@@ -1,9 +1,10 @@
-import React from 'react';
+import React, {Component} from 'react';
+import Contact from './Contact';
 
-class App extends React.Component {
+class App extends Component {
  render() {
    return (
-     <h1>Welcome to CodeLab!!</h1>
+     <Contact />
    );
  }
 }
