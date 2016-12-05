@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
 import ContactInfo from './ContactInfo';
 import ContactDetails from './ContactDetails';
-import update from 'react-addons-update';
 import ContactCreate from './ContactCreate';
+
+import update from 'react-addons-update';
 
 export default class Contact extends Component {
   constructor(props) {
@@ -31,6 +32,22 @@ export default class Contact extends Component {
     this.handleCreate = this.handleCreate.bind(this);
     this.handleRemove = this.handleRemove.bind(this);
     this.handleEdit = this.handleEdit.bind(this);
+  }
+
+  componentWillMount() {
+    const contactData = localStorage.contactData;
+
+    if(contactData) {
+      this.setState({
+        contactData: JSON.parse(contactData)
+      })
+    }
+  }
+
+  componentDidUpdate(prevProps, prevState) {
+    if(JSON.stringify(prevState.contactData) != JSON.stringify(this.state.ContactData)) {
+      localStorage.contactData = JSON.stringify(this.state.contactData);
+    }
   }
 
   handleChange(e) {
