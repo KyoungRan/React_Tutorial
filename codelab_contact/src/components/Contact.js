@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import ContactInfo from './ContactInfo';
 import ContactDetails from './ContactDetails';
+import update from 'react-addons-update';
 
 export default class Contact extends Component {
   constructor(props) {
