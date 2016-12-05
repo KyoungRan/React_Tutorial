@@ -41,8 +41,8 @@ export default class Contact extends Component {
 
   handleClick(key) {
     this.setState({
-      selectedKey: key }
-    );
+      selectedKey: key
+    });
 
     console.log(key, ' is selected');
   }
@@ -54,6 +54,9 @@ export default class Contact extends Component {
   }
 
   handleRemove() {
+    if(this.state.selectedKey < 0) {
+      return;
+    }
     this.setState({
       contactData: update(this.state.contactData,
           { $splice: [[this.state.selectedKey, 1]]}
@@ -62,7 +65,7 @@ export default class Contact extends Component {
     });
   }
 
-  handleEdit() {
+  handleEdit(name, phone) {
     this.setState({
       contactData: update(this.state.contactData,
         {
@@ -96,15 +99,18 @@ export default class Contact extends Component {
       <div>
         <h1>Contacts</h1>
         <input
-          name="Keyword"
-          placeholder="Search"
-          value={this.state.keyword}
-          onChange={this.handleChange}
+            name="Keyword"
+            placeholder="Search"
+            value={this.state.keyword}
+            onChange={this.handleChange}
         />
         <div>{mapToComponents(this.state.contactData)}</div>
         <ContactDetails
-          isSelected={this.state.selectedKey != -1}
-          contact={this.state.contactData[this.state.selectedKey]} />
+            isSelected={this.state.selectedKey != -1}
+            contact={this.state.contactData[this.state.selectedKey]}
+            onRemove={this.handleRemove}
+            onEdit={this.handleEdit}
+         />
         <ContactCreate
             onCreate={this.handleCreate}
         />
