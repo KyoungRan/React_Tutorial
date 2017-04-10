@@ -5,11 +5,11 @@ import Comments from './Comments';
 const Single = React.createClass({
   render() {
     // index of the post
-    const { postId } = this.props.params;
-    const i = this.props.posts.findIndex((post) => post.code === this.props.params.postId);
+    const { asdf } = this.props.params;
+    const i = this.props.posts.findIndex((post) => post.code === asdf);
     const post = this.props.posts[i];
 
-    const postComments = this.props.comments[postId] || [];
+    const postComments = this.props.comments[asdf] || [];
 
     //console.log(post);
     // get us the post
