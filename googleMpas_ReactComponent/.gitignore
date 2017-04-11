@@ -1,0 +1,7 @@
+node_modules/
+bower_components/
+public/js/
+bundle.js
+dist/
+npm-debug.log
+.idea/
